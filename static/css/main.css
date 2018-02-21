@@ -34,3 +34,43 @@ a {
  ****************************************************************************/
 
 /* Various other styles end */
+body {
+  letter-spacing: 1px;
+  /* cursor: url("http://www.cameronsworld.net/img/content/2/28.gif"), auto; */
+  /* background: #666666 url(http://analogrules.com/counter3c.jpg) no-repeat center fixed; */
+  font-family: 'Times New Roman';
+}
+
+input, button {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: Canterbury;
+  src: url(/static/fonts/Canterbury.ttf);
+}
+
+.canterbury {
+  font-family: Canterbury;
+}
+
+.link {
+  font-family: Canterbury;
+  letter-spacing: 11.4px;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+a:hover, a:active, a:focus {
+  text-decoration: none;
+  color: #d7efd0;
+}
+
+@media (min-width: 500px) {
+  body {
+    margin-top: 30px;
+  }
+}

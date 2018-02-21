@@ -27,53 +27,6 @@
 <link type="text/css" rel="stylesheet" href="/static/css/main.css" />
 <link type="text/css" rel="stylesheet" href="/static/css/main.responsive.css" />
 <link type="text/css" rel="stylesheet" href="/static/css/main.quickfix.css" />
-<style>
-  body {
-    letter-spacing: 1px;
-    /* cursor: url("http://www.cameronsworld.net/img/content/2/28.gif"), auto; */
-    /* background: #666666 url(http://analogrules.com/counter3c.jpg) no-repeat center fixed; */
-    font-family: 'Times New Roman';
-  }
-
-  input, button {
-    border-radius: 0;
-  }
-
-  @font-face {
-    font-family: Canterbury;
-    src: url(/static/fonts/Canterbury.ttf);
-  }
-
-  .canterbury {
-    font-family: Canterbury;
-  }
-
-  a {
-    color: black;
-    text-decoration: underline;
-  }
-
-  a:hover, a:active, a:focus {
-    text-decoration: none;
-    color: #d7efd0;
-  }
-
-  iframe {
-    height: 200px;
-    width: 200px;
-  }
-
-  @media (min-width: 500px) {
-    body {
-      margin-top: 30px;
-    }
-
-    iframe {
-      height: 300px;
-      width: 300px;
-    }
-  }
-</style>
 <!-- /styles -->
 
 <!-- favicons -->
@@ -101,7 +54,11 @@
         <div class="col-md-offset-1 col-md-10">
           <div style="position: relative;">
             <h1 class="canterbury" style="color: #000000; font-weight: 500; letter-spacing: 11.4px; font-size: 60px;">NORDRA</h1>
-            <h1 class="canterbury" style="color: #000000; font-weight: 500; letter-spacing: 11.4px; font-size: 60px; position: absolute; top: -19px; left: 4px;">NORDRA</h1>
+            <h1 class="canterbury" style="color: #000000; font-weight: 500; letter-spacing: 11.4px; font-size: 60px; position: absolute; top: -19px; left: 4px;">NORDRA
+	    <div style="display: inherit; font-size: 12px; text-align: right;">
+	      <a href="{{ url_for('consume') }}">consume</a>/<a href="{{ url_for('cv') }}">cv</a>
+	    </div>
+	    </h1>
           </div>
           <!-- Fixed navbar -->
           <!-- 
@@ -115,7 +72,6 @@
             <a href="#contact" data-toggle="toggle" data-target="#contact-section">contact</a>
           </div>
           -->
-	  <p>European March 2018 Tour</p>
 	  <p>
 	  <div class="row">
 	    <div class="col-sm-6">
@@ -123,6 +79,7 @@
 	    </div>
 	    <div class="col-sm-6">
 	      <br>
+	      <p>European March 2018 Tour</p>
 	      3.15 - Milano, IT @ <a href="javascript:void(0);"
 	      target="_blank">Santeria Social Club</a>
 	      <br>
@@ -163,13 +120,13 @@
           <div class="hidden-xs" style="height: 20px;"></div>
           <div class="hidden-xs" style="height: 20px;"></div>
           <div class="row">
-            <div class="col-sm-6 col-md-5 col-lg-4">
-	      <iframe style="border: 0;" src="https://bandcamp.com/EmbeddedPlayer/album=1202380392/size=large/bgcol=333333/linkcol=ffffff/minimal=true/transparent=true/" seamless><a href="http://sigerecords.bandcamp.com/album/nordra">Nordra by Nordra</a></iframe>
+            <div class="col-xs-12 text-center">
+	      <iframe style="border: 0;" width="300" height="300" src="https://bandcamp.com/EmbeddedPlayer/album=1202380392/size=large/bgcol=333333/linkcol=ffffff/minimal=true/transparent=true/" seamless><a href="http://sigerecords.bandcamp.com/album/nordra">Nordra by Nordra</a></iframe>
 	      <p>
 	      <p>
             </div>
-            <div class="col-sm-6 col-md-5 col-lg-4">
-              <iframe style="border: 0;" src="https://bandcamp.com/EmbeddedPlayer/album=188686871/size=large/bgcol=333333/linkcol=ffffff/minimal=true/transparent=true/" seamless><a href="http://nordra.bandcamp.com/album/pylon-ii">PYLON II by Nordra</a></iframe>
+            <div class="col-sm-6 col-md-5 col-lg-4 text-center">
+              <iframe style="border: 0;" width="300" height="300" src="https://bandcamp.com/EmbeddedPlayer/album=188686871/size=large/bgcol=333333/linkcol=ffffff/minimal=true/transparent=true/" seamless><a href="http://nordra.bandcamp.com/album/pylon-ii">PYLON II by Nordra</a></iframe>
 	      <p>
 	      <p>
             </div>
@@ -181,7 +138,9 @@
           <br>
           <small>Zen Mother booking: magiczenmother(at)gmail(dot)com</small>
           <div style="height: 40px;"></div>
-          <small>S/T LP out on <a href="http://sige.bigcartel.com/product/nordra-s-t-lp" target="_blank">SIGE Records</a>.</small>
+          <small>S/T LP/Digital out on <a href="http://sige.bigcartel.com/product/nordra-s-t-lp"
+	  target="_blank">SIGE Records</a>.</small><br>
+          <small>PYLON II LP/Digital out on <a href="http://sige.bigcartel.com/product/nordra-s-t-lp" target="_blank">SIGE Records</a>.</small>
           <div style="height: 40px;"></div>
 
           <!-- email list -->

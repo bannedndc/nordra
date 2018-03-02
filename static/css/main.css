@@ -59,6 +59,12 @@ input, button {
   letter-spacing: 11.4px;
 }
 
+.subtle-link {
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 a {
   color: black;
   text-decoration: underline;

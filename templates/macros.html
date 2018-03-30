@@ -57,6 +57,14 @@
   <div style="margin-top: 10px;">{{ '' }}</div>
 {%- endmacro %}
 
+{% macro display_show(show) -%}
+  {% set date = show.start.date.split('-') %}
+  {{date[1]}}.{{date[2]}} - {{show.location.city[:-4]}} @ <a
+  href="{{show.uri}}"
+  target="_blank">{{show.venue.displayName}}</a>
+  <br>
+{%- endmacro %}
+
 {% macro _display_show(show) -%}
   <div style="margin-bottom: 10px;">
     {% set date = show.start.date.split('-') %}
@@ -365,10 +373,6 @@
 	5.26 - Mechelen, Belgium @ In Utero Festival 
 	<br>
 	5.27 - Prague, Czech Republic @ MeetFactory w/ WAND 
-	<br>
-	5.28 - Leipzig, Germany @ Akko 
-	<br>
-	5.29 - Vienna, Austria @ AU 
 	<br>
 	5.30 - Milan, Italy @ Santeria Paladini 8
 	<br>

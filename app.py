@@ -48,9 +48,9 @@ def login_required(test):
 def home():
     posts = []
     upcoming_shows =\
-      requests.get("http://api.songkick.com/api/3.0/artists/8823199/calendar.json?apikey=zdpZeMNcromcrzB4&order=desc")
+      requests.get("http://api.songkick.com/api/3.0/artists/8823199/calendar.json?apikey=zdpZeMNcromcrzB4")
     past_shows =\
-      requests.get("http://api.songkick.com/api/3.0/artists/8823199/gigography.json?apikey=zdpZeMNcromcrzB4&order=desc")
+      requests.get("http://api.songkick.com/api/3.0/artists/8823199/gigography.json?apikey=zdpZeMNcromcrzB4")
     return render_template('home.html',
                posts=posts,
 			   upcoming_shows=upcoming_shows.json(),

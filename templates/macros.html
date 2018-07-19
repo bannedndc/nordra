@@ -35,6 +35,25 @@
   <!-- Projects -->
   <div class="row text-left">
     <div class="col-sm-12 col-md-2">
+      <h2 style="font-style: italic; font-size: 18px; font-weight: 700;">COME DIVENTARE UN
+      PARTIGIANO</h2>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <img src="/static/img/partigiano.png" style="width: 100%;"> </img>
+    </div>
+    <div class="col-sm-12 col-md-4">
+      <br>
+      <p>Composed a 5 hour score to Come Diventare Un Partigiano--an immersive durational
+      performance by Alice Gosti, inspired by the Italian Partisan movement that during WWII
+      liberated Italy from the Nazi-Fascist. In the specific the piece looks at the
+      invisibility and visibility of women in history and in contemporary time. The event was
+      held at the CAOS Museum in Terni, Italy. The music was composed in a week in the museum. Photo by Absalom Shantz. June 2018.
+    </div>
+  </div>
+  <br>
+
+  <div class="row text-left">
+    <div class="col-sm-12 col-md-2">
       <h2 style="font-style: italic; font-size: 18px; font-weight: 700;">PYLON III</h2>
     </div>
     <div class="col-sm-12 col-md-6">
@@ -42,7 +61,10 @@
     </div>
     <div class="col-sm-12 col-md-4">
       <br>
-      <p>Score to PYLON III--the final work in a trilogy of full-length dance performances choreographed by Coleman Pester. The PYLON series examines complex systems of control and a journey towards utopia, using highly physical choreography, architectural set pieces, and a variety of analog and digital technologies altogether in a tense relationship.</p>
+      <p>Score to PYLON III--the final work in a trilogy of full-length dance performances
+      choreographed by Coleman Pester. The PYLON series examines complex systems of control
+      and a journey towards utopia, using highly physical choreography, architectural set
+      pieces, and a variety of analog and digital technologies altogether in a tense relationship. January 2018.</p>
     </div>
   </div>
   <br>
@@ -60,7 +82,8 @@
       <br>
       <p>A commissioned live score for Jodorowsky's The Holy Mountain for the Puget Soundtrack
       Residency, a Cue Northwest project in partnership with Brick Lane Records and Northwest
-      Film Forum. Composed and recorded by Monika Khot and Adam Wolcott Smith. Mixed by Randall Dunn at Avast Recording in Seattle. Piece 15 of 32.</p>
+      Film Forum. Composed and recorded by Monika Khot and Adam Wolcott Smith. Mixed by
+      Randall Dunn at Avast Recording in Seattle. Piece 15 of 32. August 2017.</p>
     </div>
   </div>
   <br>
@@ -74,7 +97,13 @@
     </div>
     <div class="col-sm-12 col-md-4">
       <br>
-       <p>Score to PYLON II--explores themes of systematic fear and control placed on human bodies operating within a quagmire of technological systems essential to modern society (i.e. surveillance, the internet, architectural design). PYLON II incorporates live surveillance feeds to explore questions of observation and consent. Audiences for PYLON II enter into an immersive environment featuring, a cast of five dancers engaged in highly physical choreographed movement, a live sound score, and a complex surveillance system which is simultaneously recording and projecting visual information coming from cameras throughout the space."</p>
+       <p>Score to PYLON II--explores themes of systematic fear and control placed on human
+       bodies operating within a quagmire of technological systems essential to modern
+       society (i.e. surveillance, the internet, architectural design). PYLON II incorporates
+       live surveillance feeds to explore questions of observation and consent. Audiences
+       for PYLON II enter into an immersive environment featuring, a cast of five dancers
+	 engaged in highly physical choreographed movement, a live sound score, and a complex
+	 surveillance system which is simultaneously recording and projecting visual information coming from cameras throughout the space.". October 2016.</p>
     </div>
   </div>
   <br>
@@ -139,6 +168,19 @@
   <br>
 
   <!-- Tour Listings -->
+  {% set dates = ['May 16 The Sunset, Seattle, WA ',
+		  'May 17 Alternative Library, Bellingham, WA ',
+		  'May 18 Hobbit Hole, Olympia, WA ',
+		  'May 19 Beacon Sound, Portland, OR ',
+		  'May 20 Sam Bonds Garage, Eugene, OR ',
+		  'May 21 Dildo Factory, Berkeley, CA ',
+		  'May 22 CNMAT, Berkeley, CA ',
+		  'May 23 Blue Lamp, Sacramento, CA ',
+		  'May 24 Rec Center, Los Angeles, CA ',
+		  'May 25 The Monty, Los Angeles, CA '
+		  ] %}
+  {{ tour_listing('Capitalist Noize Tour 2018', 'Nordra, Skerik', dates, 'SkerikNordra.jpg') }}
+
   {% set dates = ['4/22 Ningbo CN, Timeline',
 		  '4/23 Hangzhou CN, 9 Club',
 		  '4/24 Wuhan CN, Coastline',
